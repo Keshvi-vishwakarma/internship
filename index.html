@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--navbar-->
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.webp" alt="logo">
+                <div class="company-name">
+                    <span>Satyaansh Software</span>
+                    Pvt. Ltd.
+                </div>
+            </div>
+
+            <!--menu bar of days-->
+            <ul class="days-link">
+                <li onclick="loadPage('day 1/index.html')">Day 1</li>
+                <li onclick="loadPage('day 2/index.html')">Day 2</li>
+                <li onclick="loadPage('day 3/index.html')">Day 3</li>
+            </ul>
+
+            <!--hamburger button-->
+            <button class="hamburger">
+                <img src="images/hamburger.webp" alt="hamburger-logo">
+            </button>
+        </div>
+
+        <!--iframe that displays the work-->
+          <iframe
+            id="dayFrame"
+            src="day 1/index.html"
+            width="100%"
+            height="800">
+         </iframe>
+    </div>
+
+    <!--javascript for interactive website aand set up hamburger + iframe-->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+         const daysLink = document.querySelector(".days-link");
+
+         hamburger.addEventListener("click", () => {
+            daysLink.classList.toggle("active");
+         });
+
+         function loadPage(page) {
+           let frame= document.getElementById("dayFrame")
+           frame.src = page;
+         }
+
+    </script>
+</body>
+</html>
