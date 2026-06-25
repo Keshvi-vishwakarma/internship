@@ -2,5 +2,5 @@ const classDiv= document.querySelector(".card");
 const btnDiv= document.querySelector(".btn");
 
 btnDiv.addEventListener('click',()=>{
-    classDiv.style.background='red';
+    classDiv.style.background='rgb(213, 151, 222)';
 })
