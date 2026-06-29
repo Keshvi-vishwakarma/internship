@@ -123,19 +123,6 @@ button:hover{
 
 }
 
-/* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f7f3ef;
-}
-
 /* Navbar */
 .navbar{
     background-color: #4e342e;
